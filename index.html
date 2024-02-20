@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Vite App</title>
+        <style>
+            :root {
+                --theme-text: #364040FF;
+                --theme-background: #FCFCFCFF;
+                --theme-accent: #ED2024FF;
+                --theme-bright: #FBC9B4FF;
+                --theme-dark: #DB2428FF;
+            }
+
+            html {
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <p>
+                Syntax should be <code>#[definition term]</code>; <abbr title="definition term">definition term</abbr>
+                if term and text are the same (case insensitive).
+
+                <br><br>
+                Or <code>#[definition text](definition term)</code>; <abbr title="definition term" data-theme="light">definition
+                text</abbr> if they are different.
+
+                <br><br>
+                Some more tests (external definition loaded) <abbr title="Cruoris sine, est cum tendentem Saturnia, augebat munere turba ille Hectoreis me. Mutata per mihi inmissos canitiem, altera properant vocandus attollit **animantis ense deceperit**? Ab tinctam, Latonae, sua astu vertentia verba hastilibus colle; me domant caenumque excipit viribus *Peleus* est! Iam vela cepere pueri trepidare magna oracula patens. Frustra esse.">hello
+                world</abbr>
+                and <abbr title="BEEP BOOP">i am a robot</abbr>
+            </p>
+        </section>
+
+        <script type="module">
+            import { bindDefinitionTags } from './main';
+
+            bindDefinitionTags();
+        </script>
+    </body>
+</html>
