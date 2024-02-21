@@ -2,23 +2,17 @@ import tippy from 'tippy.js';
 
 import './styles.scss';
 
-export function bindDefinitionTags(element, options = {}) {
+export function bindDefinitionTags(element = undefined, options = {}) {
     (element || document).querySelectorAll('abbr[title]').forEach(definition => {
-        definition.dataset.title = definition.title;
-        definition.removeAttribute('title');
-
-        definition.tippy = tippy(definition, Object.assign({}, options, {
+        definition.tippy = tippy(definition, Object.assign({
             theme: 'doc-it',
-            content: definition.dataset.title,
-        }));
+            content: definition.title,
+        }, options));
     });
 }
 
-export function unbindDefinitionTags(element) {
-    (element || document.querySelectorAll('abbr[data-title]')).forEach(definition => {
-        definition.title = definition.dataset.title;
-        definition.removeAttribute('data-title');
-
-        definition.tippy.destroy();
+export function unbindDefinitionTags(element = undefined) {
+    (element || document.querySelectorAll('abbr[title]')).forEach(definition => {
+        definition.tippy?.destroy();
     });
 }

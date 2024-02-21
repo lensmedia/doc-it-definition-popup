@@ -2,8 +2,12 @@
 
 .tippy-box[data-theme~="doc-it"] {
     background-color: var(--theme-bright);
-    color: inherit;
     border: thin solid var(--theme-accent);
+    border-radius: 0;
+
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
 
     &[data-placement^="top"] .tippy-arrow::before {
         border-width: 7px 7px 0;
