@@ -30,7 +30,7 @@
     }
 }
 
-abbr {
+abbr[data-title] {
     cursor: help;
 
     text-decoration: underline wavy var(--theme-accent, inherit) from-font;
