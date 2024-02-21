@@ -1713,9 +1713,9 @@ function ei(e) {
   (e || document).querySelectorAll("abbr[title]").forEach((t) => {
     t.dataset.title = t.title, t.removeAttribute("title"), t.tippy = qe(t, {
       theme: "doc-it",
-      content: t.dataset.title,
-      hideOnClick: !1,
-      trigger: "click"
+      content: t.dataset.title
+      // hideOnClick: false,
+      // trigger: 'click',
     });
   });
 }

@@ -11,8 +11,8 @@ export function bindDefinitionTags(element) {
             theme: 'doc-it',
             content: definition.dataset.title,
 
-            hideOnClick: false,
-            trigger: 'click',
+            // hideOnClick: false,
+            // trigger: 'click',
         })
     });
 }

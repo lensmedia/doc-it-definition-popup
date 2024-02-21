@@ -1,14 +1,14 @@
 {
     "name": "@lensmedia/doc-it-definition-popup",
     "private": true,
-    "version": "0.1.1",
+    "version": "0.1.2",
     "files": [
         "dist"
     ],
     "main": "./dist/doc-it-definition-popup.umd.js",
     "module": "./dist/doc-it-definition-popup.es.js",
     "exports": {
-        "./doc-it-definition-popup.css": "./dist/doc-it-definition-popup.css",
+        "./dist/doc-it-definition-popup.css": "./dist/doc-it-definition-popup.css",
         ".": {
             "import": "./dist/doc-it-definition-popup.es.js",
             "require": "./dist/doc-it-definition-popup.umd.js"
