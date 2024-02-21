@@ -1714,7 +1714,6 @@ function ei(e = void 0, t = {}) {
     r.tippy = qe(r, Object.assign({
       theme: "doc-it",
       content: r.dataset.title,
-      distance: 0,
       duration: 100
     }, t));
   });

@@ -8,7 +8,6 @@ export function bindDefinitionTags(element = undefined, options = {}) {
             theme: 'doc-it',
             content: definition.dataset.title,
 
-            distance: 0,
             duration: 100,
         }, options));
     });
