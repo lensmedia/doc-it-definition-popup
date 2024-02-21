@@ -2,18 +2,15 @@ import tippy from 'tippy.js';
 
 import './styles.scss';
 
-export function bindDefinitionTags(element) {
+export function bindDefinitionTags(element, options = {}) {
     (element || document).querySelectorAll('abbr[title]').forEach(definition => {
         definition.dataset.title = definition.title;
         definition.removeAttribute('title');
 
-        definition.tippy = tippy(definition, {
+        definition.tippy = tippy(definition, Object.assign({}, options, {
             theme: 'doc-it',
             content: definition.dataset.title,
-
-            // hideOnClick: false,
-            // trigger: 'click',
-        })
+        }));
     });
 }
 

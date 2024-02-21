@@ -1709,14 +1709,12 @@ Object.assign({}, Gt, {
 qe.setDefaultProps({
   render: dr
 });
-function ei(e) {
-  (e || document).querySelectorAll("abbr[title]").forEach((t) => {
-    t.dataset.title = t.title, t.removeAttribute("title"), t.tippy = qe(t, {
+function ei(e, t = {}) {
+  (e || document).querySelectorAll("abbr[title]").forEach((r) => {
+    r.dataset.title = r.title, r.removeAttribute("title"), r.tippy = qe(r, Object.assign({}, t, {
       theme: "doc-it",
-      content: t.dataset.title
-      // hideOnClick: false,
-      // trigger: 'click',
-    });
+      content: r.dataset.title
+    }));
   });
 }
 function ti(e) {
