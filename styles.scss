@@ -33,6 +33,14 @@
 abbr[data-title] {
     cursor: help;
 
-    text-decoration: underline wavy var(--theme-accent, inherit) from-font;
+    text-decoration-line: underline;
+    text-decoration-thickness: from-font;
+
+    -webkit-text-decoration-color: var(--theme-accent, inherit);
+    text-decoration-color: var(--theme-accent, inherit);
+
+    -webkit-text-decoration-style: wavy;
+    text-decoration-style: wavy;
+
     text-underline-offset: .125em;
 }

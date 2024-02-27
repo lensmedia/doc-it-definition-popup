@@ -1,7 +1,7 @@
 {
     "name": "@lensmedia/doc-it-definition-popup",
     "private": true,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "files": [
         "dist"
     ],
@@ -15,7 +15,7 @@
         }
     },
     "scripts": {
-        "dev": "vite",
+        "dev": "vite --host",
         "build": "vite build",
         "preview": "vite preview"
     },
